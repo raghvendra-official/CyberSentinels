@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrusion Detection System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="text-light">Cyber</span><span class="text-accent">Sentinels</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Intrusion Detection</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="login/index.html"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Intrusion Detection System</h1>
+        <div class="card">
+            <div class="description">
+                <p>
+                    Monitor network traffic in real-time using advanced machine learning techniques. Detect and respond to unusual activities and prevent potential intrusions effectively.
+                </p>
+            </div>
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <label for="networkLogInput" class="label">Upload Network Log File:</label>
+                <label class="file-upload">
+                    <input type="file" id="networkLogInput" accept=".log" hidden>
+                    <span>📤 Upload Network Log</span>
+                </label>
+                <p id="fileName" class="file-name">No file uploaded</p>
+                <button id="analyzeLogButton" class="btn" disabled>Analyze Log</button>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section">
+                <h3>Analysis Results</h3>
+                <div id="resultsArea" class="results-area">
+                    Upload a network log file to see the analysis results.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2><span class="text-light">Cyber</span><span class="text-accent">Sentinels</span></h2>
+                <p>Integrated Security and Vulnerability Management</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                </ul>
+            </div>
+            <!-- Contact Information -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>✉️ xyz@gmail.com</li>
+                    <li>📍 Address</li>
+                    <li>📞 +91 1234567899</li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

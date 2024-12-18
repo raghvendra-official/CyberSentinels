@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+
+    background-size: cover; /* Ensures the image covers the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Full height of the viewport */
+    color: white; /* Makes text readable on dark images */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better contrast */
+    line-height: 1.6;
+    color: #fff;
+}
+/* Navigation Bar */
+header {
+    padding: 6px 10%;
+    background-color: rgb(26, 30, 38);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-accent {
+    color: #00c2ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 900;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #00c2ff;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-image: url('images/Hero.jpg');
+    height: 90vh;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.purchase-btn {
+    background: linear-gradient(90deg, #00c2ff, #00a1ff);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.purchase-btn:hover {
+    background: linear-gradient(90deg, #0097e6, #007bb5);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 80%;
+    max-width: 400px;
+    animation: float 3s ease-in-out infinite;
+    
+}
+
+/* Image Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Goals Section */
+.goals {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('images/Goals.png');
+    background-size: cover; /* Ensures the image covers the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+}
+
+/* Subtitle */
+.subtitle {
+    color: #00C8E8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+/* Cards Container */
+.cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+.cards::-webkit-scrollbar {
+    height: 5px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 5px;
+}
+
+.card {
+    background: rgba(29, 31, 33, 0.8); /* Adding transparency */
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 200, 232, 0.5);
+    border-color: #00C8E8;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+
+
+
+/* Service Section */
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.our-service {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('images/Sbg.jpg');
+    background-size: cover; /* Ensures the image covers the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+}
+
+.service-title {
+    color: #00D4FF;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.service-heading {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+/* Service Cards Container */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: rgba(29, 31, 33, 0.8);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active Card */
+
+.service-card:hover { /* Apply hover effect */
+    border-color: #00D4FF;
+    box-shadow: 0px 8px 20px rgba(0, 212, 255, 0.5);
+    transform: translateY(-10px); /* Slight upward lift effect */
+}
+
+
+/* Service Icons */
+.icon img {
+    background-color: #1C1E24;
+    border: 2px solid #00D4FF;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+/* Card Title */
+.service-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Card Description */
+.service-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #111;
+    padding: 50px 10%;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-brand h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-accent {
+    color: #00c2ff;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.social-icons a i {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.social-icons a i:hover {
+    transform: scale(1.1);
+    color: #00c2ff;
+}
+
+/* Quick Links and Contact Us */
+.footer-links h3,
+.footer-contact h3,
+.footer-newsletter h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+
+}
+
+.footer-links ul li,
+.footer-contact ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+    list-style: none;
+    
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #00c2ff;
+}
+
+/* Newsletter Subscription */
+.footer-newsletter .newsletter-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+    outline: none;
+}
+
+.footer-newsletter button {
+    background: linear-gradient(90deg, #00c2ff, #0097e6);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.footer-newsletter button:hover {
+    background: linear-gradient(90deg, #0097e6, #007bb5);
+}

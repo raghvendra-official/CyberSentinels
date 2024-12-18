@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Cybersecurity Platform</h2>
+      <nav>
+        <div class="menu-item active"><span class="icon">📊</span> Dashboard</div>
+        <div class="menu-item"><span class="icon">🛡️</span> Intrusion Detection</div>
+        <div class="menu-item"><span class="icon">✉️</span> Phishing Detection</div>
+        <div class="menu-item"><span class="icon">🕵️</span> Vulnerability Scanner</div>
+        <div class="menu-item"><span class="icon">🖼️</span> Digital Watermarking</div>
+        <div class="menu-item"><span class="icon">📄</span> Reports</div>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <h1 class="title">Dashboard</h1>
+
+      <!-- Overview Cards -->
+      <section class="cards">
+        <div class="card">
+          <div class="card-header">
+            <h3>Active Threats</h3>
+            <span>⚠️</span>
+          </div>
+          <div class="card-body">
+            <p class="card-value">3</p>
+            <p class="card-subtext">+2 since last hour</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>System Health</h3>
+            <span>💻</span>
+          </div>
+          <div class="card-body">
+            <p class="card-value">Good</p>
+            <p class="card-subtext">All systems operational</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Recent Activities</h3>
+            <span>📝</span>
+          </div>
+          <div class="card-body">
+            <p class="card-value">12</p>
+            <p class="card-subtext">In the last 24 hours</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alerts -->
+      <section class="alerts">
+        <h2>Real-Time Alerts</h2>
+        <div class="alert critical">
+          <span>🚨</span>
+          <div>
+            <strong>Critical:</strong> Potential data breach detected. Immediate action required.
+          </div>
+        </div>
+      </section>
+
+      <!-- Security Status -->
+      <section class="security-status">
+        <h2>Security Status</h2>
+        <div class="status">
+          <div class="status-indicator warning"></div>
+          <span>System under elevated risk</span>
+        </div>
+      </section>
+
+      <!-- Placeholder for Graph -->
+      <section class="graphs">
+        <h2>Network Activity</h2>
+        <div class="graph-placeholder">
+          <p>Graph placeholder: Network activity over time</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
